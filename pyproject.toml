@@ -1,0 +1,25 @@
+[project]
+name = "llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "prasannaannigeri17-debug", email = "prasannaannigeri17@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "python-docx>=1.2.0",
+    "groq>=1.7.0",
+    "pydantic>=2.13.5",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.2.3",
+    "typing>=3.10.0.0",
+    "inputimeout>=1.0.4",
+]
+
+[project.scripts]
+llm = "llm:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
